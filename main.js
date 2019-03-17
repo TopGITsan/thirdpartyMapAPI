@@ -1,7 +1,13 @@
-let storeMap;
 
-let map = storeMap.mapquest.map('map',{
-    center: [36.0596896,14.2825335],
-    layers: storeMap.mapquest.tileLayer('map'),
-    zoom: 12
-});
+window.onload = function () {
+    L.mapquest.key = process.env.MAPKEY;
+
+    // 'map' refers to a <div> element with the ID map
+    let map = L.mapquest.map('map', {
+        center: [37.7749, -122.4194],
+        layers: L.mapquest.tileLayer('map'),
+        zoom: 12
+    });
+
+    map.addControl(L.mapquest.control());
+}
