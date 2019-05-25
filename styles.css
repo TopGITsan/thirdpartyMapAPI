@@ -1,5 +1,5 @@
 body {
-    background-color: gray;
+    background-color: #fff;
     text-align: center;
 }
 
@@ -7,6 +7,7 @@ body {
     width: 600px;
     height: 600px;
     margin: 10px auto;
+    box-shadow: 6px 6px 12px grey;
 }
 
 h1 {
